@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             DropdownButtonFormField(
               value: _inputBase,
-              items: ['Decimal', 'Binary', 'Octal', 'Hexadecimal']
+              items: ['Decimal', 'Binario', 'Octal', 'Hexadecimal']
                   .map((base) =>
                       DropdownMenuItem(value: base, child: Text(base)))
                   .toList(),
@@ -102,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   _inputBase = value.toString();
                 });
               },
-              decoration: const InputDecoration(labelText: 'De'),
+              decoration: const InputDecoration(labelText: 'Converter De:'),
             ),
             const SizedBox(height: 20.0),
             TextField(
