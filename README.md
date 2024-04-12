@@ -1,6 +1,6 @@
 # Conversor de Números - Diogo Silva & Mariana Nogueira
 
-Este é um aplicativo móvel desenvolvido em Flutter que simula uma calculadora capaz de realizar conversões entre bases numéricas diferentes, como: decimal, binário, octal e hexadecimal.
+Este é uma aplicação desenvolvido em Flutter que simula uma calculadora capaz de realizar conversões entre bases numéricas diferentes, como: decimal, binário, octal e hexadecimal.
 
 ## Funcionalidades
 
