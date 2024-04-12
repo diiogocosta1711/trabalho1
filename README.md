@@ -1,16 +1,11 @@
-# trabalho1
+# Conversor de Números - Diogo Silva & Mariana Nogueira
 
-A new Flutter project.
+Este é uma aplicação desenvolvido em Flutter que simula uma calculadora capaz de realizar conversões entre bases numéricas diferentes, como: decimal, binário, octal e hexadecimal.
 
-## Getting Started
+## Funcionalidades
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- O utilizador pode selecionar a base numérica de entrada (decimal, binário, octal, hexadecimal).
+- O utilizador pode inserir o número a ser convertido.
+- O utilizador pode selecionar a base numérica de saída (decimal, binário, octal, hexadecimal).
+- A aplicação converte automaticamente o número de entrada para a base de saída selecionada.
+- O resultado da conversão é exibido ao utilizador.
