@@ -10,11 +10,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Conversor de Números - Diogo Silva & Mariana Nogueira', // Define o título do aplicativo
+      title:
+          'Conversor de Números - Diogo Silva & Mariana Nogueira', // Define o título da aplicação
       theme: ThemeData(
         primarySwatch: Colors.purple, // Define a cor primária do tema
       ),
-      home: const MyHomePage(title: 'Conversor de Números - Página Inicial'), // Define a página inicial
+      home: const MyHomePage(
+          title:
+              'Conversor de Números - Página Inicial'), // Define a página inicial
     );
   }
 }
@@ -36,7 +39,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   // Função para converter o número de entrada para a base de saída selecionada
   void _convert() {
-    String inputValue = _inputValue.trim(); // Remove espaços em branco do valor de entrada
+    String inputValue =
+        _inputValue.trim(); // Remove espaços em branco do valor de entrada
     int? parsedValue; // Valor inteiro parseado
 
     // Converte o valor de entrada para um inteiro baseado na base de entrada selecionada
@@ -64,10 +68,12 @@ class _MyHomePageState extends State<MyHomePage> {
             _outputValue = parsedValue.toString();
             break;
           case 'Binary':
-            _outputValue = parsedValue?.toRadixString(2) ?? ''; // Converte para binário
+            _outputValue =
+                parsedValue?.toRadixString(2) ?? ''; // Converte para binário
             break;
           case 'Octal':
-            _outputValue = parsedValue?.toRadixString(8) ?? ''; // Converte para octal
+            _outputValue =
+                parsedValue?.toRadixString(8) ?? ''; // Converte para octal
             break;
           case 'Hexadecimal':
             _outputValue = parsedValue?.toRadixString(16)?.toUpperCase() ??
@@ -87,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title), // Título da barra de aplicativos
+        title: Text(widget.title), // Título da barra de aplicações
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -96,7 +102,12 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             DropdownButtonFormField(
               value: _inputBase,
-              items: ['Decimal', 'Binario', 'Octal', 'Hexadecimal'] // Opções para a base de entrada
+              items: [
+                'Decimal',
+                'Binario',
+                'Octal',
+                'Hexadecimal'
+              ] // Opções para a base de entrada
                   .map((base) =>
                       DropdownMenuItem(value: base, child: Text(base)))
                   .toList(),
@@ -105,19 +116,28 @@ class _MyHomePageState extends State<MyHomePage> {
                   _inputBase = value.toString();
                 });
               },
-              decoration: const InputDecoration(labelText: 'Converter De:'), // Rótulo para a base de entrada
+              decoration: const InputDecoration(
+                  labelText: 'Converter De:'), // Rótulo para a base de entrada
             ),
             const SizedBox(height: 20.0),
             TextField(
-              decoration: const InputDecoration(labelText: 'Insira o número'), // Rótulo para a entrada do número
+              decoration: const InputDecoration(
+                  labelText:
+                      'Insira o número'), // Rótulo para a entrada do número
               onChanged: (value) {
-                _inputValue = value; // Atualiza o valor de entrada conforme o usuário digita
+                _inputValue =
+                    value; // Atualiza o valor de entrada conforme o utilizador digita
               },
             ),
             const SizedBox(height: 20.0),
             DropdownButtonFormField(
               value: _outputBase,
-              items: ['Decimal', 'Binary', 'Octal', 'Hexadecimal'] // Opções para a base de saída
+              items: [
+                'Decimal',
+                'Binary',
+                'Octal',
+                'Hexadecimal'
+              ] // Opções para a base de saída
                   .map((base) =>
                       DropdownMenuItem(value: base, child: Text(base)))
                   .toList(),
@@ -126,7 +146,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   _outputBase = value.toString();
                 });
               },
-              decoration: const InputDecoration(labelText: 'Para'), // Rótulo para a base de saída
+              decoration: const InputDecoration(
+                  labelText: 'Para'), // Rótulo para a base de saída
             ),
             const SizedBox(height: 20.0),
             ElevatedButton(
