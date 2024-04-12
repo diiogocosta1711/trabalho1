@@ -10,11 +10,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Base Converter',
+      title: 'Conversor de Números - Diogo Silva & Mariana Nogueira',
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: const MyHomePage(title: 'Base Converter - Página Inicial'),
+      home: const MyHomePage(title: 'Conversor de Números - Página Inicial'),
     );
   }
 }
@@ -75,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
       });
     } else {
       setState(() {
-        _outputValue = 'Invalid input';
+        _outputValue = 'Número INVÁLIDO!';
       });
     }
   }
