@@ -104,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
               value: _inputBase,
               items: [
                 'Decimal',
-                'Binario',
+                'Binary',
                 'Octal',
                 'Hexadecimal'
               ] // Opções para a base de entrada
